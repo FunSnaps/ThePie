@@ -1,0 +1,41 @@
+﻿@model ThePie.Models.Publisher
+
+@{
+  ViewData["Title"] = "Edit";
+}
+
+<body class="edit-comics-page">
+
+  <div class="homeTitle animate__animated animate__backInUp">
+    Something wrong?!
+  </div>
+  <div class="row editpage">
+    <form asp-action="Edit">
+      <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+      <input type="hidden" asp-for="id" />
+      <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+      </div>
+      <div class="form-group">
+        <label asp-for="Country" class="control-label"></label>
+        <input asp-for="Country" class="form-control" />
+        <span asp-validation-for="Country" class="text-danger"></span>
+      </div>
+      <div class="form-group form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" asp-for="Active" /> @Html.DisplayNameFor(model => model.Active)
+        </label>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+      </div>
+    </form>
+  </div>
+</body>
+
+@section Scripts {
+  @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

@@ -1,0 +1,59 @@
+﻿@model ThePie.Models.Comic
+
+@{
+  ViewData["Title"] = "Delete";
+}
+
+<body class="delete-comics-page">
+
+  <div class="homeTitle animate__animated animate__backInUp">
+    Pick wisely...
+  </div>
+
+  <div>
+    <dl class="row">
+      <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Title)
+      </dt>
+      <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Title)
+      </dd>
+      <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.ReleaseDate)
+      </dt>
+      <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.ReleaseDate)
+      </dd>
+      <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.AgeRating)
+      </dt>
+      <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.AgeRating)
+      </dd>
+      <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Price)
+      </dt>
+      <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Price)
+      </dd>
+      <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Author)
+      </dt>
+      <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Author.Name)
+      </dd>
+      <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Publisher)
+      </dt>
+      <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Publisher.Name)
+      </dd>
+    </dl>
+
+    <form asp-action="Delete">
+      <input type="hidden" asp-for="id" />
+      <input type="submit" value="Delete" class="btn btn-danger" />
+      <a asp-action="Index" class="btn btn-dark"> <i class="fas fa-hand-point-left"></i> &nbsp;Take a step back!</a>
+    </form>
+  </div>
+</body>

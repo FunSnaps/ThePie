@@ -1,0 +1,228 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+
+nav {
+  background-color: black !important;
+}
+
+.text-dark {
+  color: white !important;
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+  color: #fff !important;
+}
+
+a.nav-link:hover {
+  color: yellow !important;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: black;
+}
+
+.options {
+  width: 90px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+button.nav-link:hover {
+  color: yellow !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  font-size: 200%;
+  margin-bottom: 60px;
+  background-color: darkgoldenrod !important;
+  /*font-family: 'Inconsolata', monospace;*/
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.comics-body {
+  background-image: url("../images/backgroundComics.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: top;
+  background-size: 150vh, 100vw;
+}
+
+.edit-comics-page {
+  background-image: url("../images/editBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: top;
+  background-size: 150vh, 100vw;
+}
+
+.create-comics-page {
+  background-image: url("../images/createBackground.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: top;
+  background-size: 150vh, 100vw;
+}
+
+.details-comics-page {
+  background-image: url("../images/detailsBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: top;
+  background-size: 125vh, 100vw;
+}
+
+.delete-comics-page {
+  background-image: url("../images/deleteBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: top;
+  background-size: 125vh, 100vw;
+}
+
+.search-comics-page {
+  background-image: url("../images/searchBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 160vh, 50vw;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.homeTitle {
+  font-size: 100px;
+  color: red;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+footer.border-top.footer {
+  background-color: white;
+}
+
+.nav-link {
+  font-size: 24px !important;
+  margin-top: auto;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+  .section h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: lightslategray;
+    padding: 20px;
+    margin: 15px;
+    z-index: 1;
+    opacity: 0.7;
+  }
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.5;
+}
+
+.editpage {
+  width: 100%;
+}
+
+.form-control {
+  font-size: 90%;
+}
+
+.navbar-toggler {
+  background-color: darkgoldenrod !important;
+}
+
+.card {
+  font-size: 80%;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  opacity: .9;
+}

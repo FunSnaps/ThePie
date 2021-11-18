@@ -1,0 +1,32 @@
+﻿@model ThePie.Models.Poster
+
+@{
+  ViewData["Title"] = "Details";
+}
+
+<body class="details-comics-page">
+  @*here*@
+  <div>
+    <div class="homeTitle animate__animated animate__backInRight">
+      More info
+    </div>
+    <dl class="row">
+      <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Name)
+      </dt>
+      <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Name)
+      </dd>
+      <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.ImageName)
+      </dt>
+      <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.ImageName)
+      </dd>
+    </dl>
+  </div>
+  <div>
+    <a asp-action="Edit" asp-route-id="@Model.id" class=" btn btn-success">Edit</a>
+    <a asp-action="Index" class="btn btn-dark"> <i class="fas fa-hand-point-left"></i> &nbsp;Take a step back!</a>
+  </div>
+</body>

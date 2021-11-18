@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ThePie.Models.Publisher>
+
+@{
+  ViewData["Title"] = "Index";
+}
+
+<body class="comics-body">@*here*@
+
+  <div class="homeTitle animate__animated animate__wobble">
+    Contribute!
+  </div>
+
+  <p>
+    <a asp-controller="Publishers" asp-action="Create" class="btn btn-dark"> <i class="fas fa-plus"></i> &nbsp;Create new entry!</a>
+  </p>
+
+
+  <div class="row">
+    @foreach (var item in Model)
+    {
+      <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="~/images/@item.Name" alt="Card image cap">
+
+        <div class="card-body">
+
+          <ul class="list-group list-group-flush">
+            <li style="list-style-type: none" class="card-title">@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(modelItem => item.Name)</li>
+            <li style="list-style-type: none" class="card-title">@Html.DisplayNameFor(model => model.Country): @Html.DisplayFor(modelItem => item.Country)</li>
+            <li style="list-style-type: none" class="card-title">@Html.DisplayNameFor(model => model.Active): @Html.DisplayFor(modelItem => item.Active)</li>
+          </ul>
+
+          <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-dark options"><i class="fas fa-edit"></i>&nbsp;Edit</a>
+          <a asp-action="Details" asp-route-id="@item.id" class="btn btn-info options"><i class="fas fa-info-circle"></i> &nbsp;Info</a>
+          <a asp-action="Delete" asp-route-id="@item.id" class="btn btn-danger options"><i class="fas fa-trash-alt"></i>&nbsp;Delete</a>
+        </div>
+      </div>
+    }
+  </div>
+</body>
